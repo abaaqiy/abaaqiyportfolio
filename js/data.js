@@ -53,23 +53,6 @@ const SKILLS = [
 
 const PROJECTS = [
   {
-    id: "conference-ticketing",
-    title: "Conference Ticketing Web Application",
-    status: "In progress",
-    description:
-      "A conference ticketing interface concept designed to make ticket selection and registration straightforward.",
-    tech: ["React.js", "JavaScript", "Vite", "CSS"],
-    features: [
-      "Standard, VIP, and Student ticket categories",
-      "Ticket quantity handling",
-      "Conditional form rendering",
-      "Component-based interface structure",
-    ],
-    image: null,
-    live: null,
-    repo: null,
-  },
-  {
     id: "amazing-roy",
     title: "Amazing Roy Website",
     status: "Live",
@@ -82,7 +65,7 @@ const PROJECTS = [
       "Responsive layouts across screen sizes",
       "Clean typography and visual hierarchy",
     ],
-    image: null,
+    image: "assets/projects/amazing-roy.png",
     live: "https://amazing-roy.vercel.app/",
     repo: null,
   },
@@ -99,7 +82,7 @@ const PROJECTS = [
       "Reusable interface components",
       "Responsive layout and styling",
     ],
-    image: null,
+    image: "assets/projects/event-ticket-generator.png",
     live: null,
     repo: "https://github.com/abaaqiy/event-ticket-generator.git",
   },
@@ -116,70 +99,8 @@ const PROJECTS = [
       "Responsive layouts across breakpoints",
       "SVG icons and accessibility considerations",
     ],
-    image: null,
+    image: "assets/projects/clipboard-landing.png",
     live: null,
     repo: "https://github.com/abaaqiy/clipboard-landing-page.git",
-  },
-];
-
-const EXPERIENCE = [
-  {
-    role: "Online Qur'an & Arabic Tutor",
-    org: "Al-Kanz Online Institute",
-    location: "Remote",
-    period: "2023 – Present",
-    points: [
-      "Deliver online Qur'an learning sessions.",
-      "Support learners with memorisation, revision (Muraja'ah), and Tajweed.",
-      "Communicate lesson objectives and learning guidance clearly.",
-      "Organise learning activities and maintain communication with students and parents.",
-      "Support a structured and consistent remote learning experience.",
-    ],
-    note: "This role demonstrates remote communication, self-management, planning, and learner support.",
-  },
-  {
-    role: "Qur'an Teacher",
-    org: "Muflihun High School",
-    location: "Ibadan, Nigeria",
-    period: "Dates to be confirmed",
-    points: [
-      "Delivered structured Qur'an lessons.",
-      "Supported students' recitation, memorisation, and revision.",
-      "Adapted explanations to learners' needs.",
-      "Encouraged consistency and discipline in learning.",
-    ],
-  },
-  {
-    role: "Part-Time Qur'an Teacher",
-    org: "Model Islamic Educational Foundation",
-    location: "Kubwa, Abuja",
-    period: "Dates to be confirmed",
-    points: [
-      "Taught Qur'an to primary and secondary school learners.",
-      "Supported recitation, memorisation, and revision.",
-      "Helped students build a consistent learning routine.",
-    ],
-  },
-];
-
-const LEADERSHIP = [
-  {
-    role: "Assistant General Secretary",
-    org: "Muslim Students' Society of Nigeria (MSSN), Obafemi Awolowo University",
-    points: [
-      "Administrative coordination and documentation.",
-      "Official correspondence and organisational communication.",
-      "Collaboration with executive members and committees.",
-      "Support for student programmes and educational activities.",
-    ],
-  },
-  {
-    role: "Member, Islamic Affairs Board",
-    org: "MSSN, Obafemi Awolowo University",
-    points: [
-      "Participation in Islamic educational programmes.",
-      "Support for community outreach and student development.",
-      "Contribution to event planning, proposals, and programme coordination.",
-    ],
   },
 ];

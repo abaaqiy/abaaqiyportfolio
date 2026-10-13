@@ -66,40 +66,7 @@ function renderProjects() {
   }).join("");
 }
 
-// ---------- 3. RENDER EXPERIENCE ----------
-function renderExperience() {
-  const list = document.getElementById("experienceTimeline");
-  if (!list) return;
-
-  list.innerHTML = EXPERIENCE.map((e) => `
-    <li class="timeline-item">
-      <h3 class="timeline-role">${e.role}</h3>
-      <p class="timeline-meta">${e.org} · ${e.location} · ${e.period}</p>
-      <ul class="timeline-points">
-        ${e.points.map((p) => `<li>${p}</li>`).join("")}
-      </ul>
-      ${e.note ? `<p class="timeline-note">${e.note}</p>` : ""}
-    </li>
-  `).join("");
-}
-
-// ---------- 4. RENDER LEADERSHIP ----------
-function renderLeadership() {
-  const grid = document.getElementById("leadershipGrid");
-  if (!grid) return;
-
-  grid.innerHTML = LEADERSHIP.map((item) => `
-    <div class="card">
-      <h3>${item.role}</h3>
-      <p class="org">${item.org}</p>
-      <ul>
-        ${item.points.map((p) => `<li>${p}</li>`).join("")}
-      </ul>
-    </div>
-  `).join("");
-}
-
-// ---------- 5. NAVBAR SCROLL & MOBILE MENU ----------
+// ---------- 3. NAVBAR SCROLL & MOBILE MENU ----------
 function initNavbar() {
   const navbar = document.getElementById("navbar");
   const toggle = document.getElementById("menuToggle");
@@ -127,7 +94,7 @@ function initNavbar() {
   }
 }
 
-// ---------- 6. ACTIVE LINK HIGHLIGHT ----------
+// ---------- 4. ACTIVE LINK HIGHLIGHT ----------
 function initActiveLink() {
   const sections = document.querySelectorAll("main section[id]");
   const navLinks = document.querySelectorAll(".nav-links a");
@@ -150,13 +117,13 @@ function initActiveLink() {
   sections.forEach((s) => observer.observe(s));
 }
 
-// ---------- 7. DYNAMIC YEAR ----------
+// ---------- 5. DYNAMIC YEAR ----------
 function initYear() {
   const y = document.getElementById("year");
   if (y) y.textContent = new Date().getFullYear();
 }
 
-// ---------- 8. APPLY SITE LINKS FROM DATA ----------
+// ---------- 6. APPLY SITE LINKS FROM DATA ----------
 function applySiteLinks() {
   // Every mailto: link → your email
   document.querySelectorAll('a[href^="mailto:"]').forEach((a) => {
@@ -178,8 +145,6 @@ function applySiteLinks() {
 document.addEventListener("DOMContentLoaded", () => {
   renderSkills();
   renderProjects();
-  renderExperience();
-  renderLeadership();
   initNavbar();
   initActiveLink();
   initYear();
